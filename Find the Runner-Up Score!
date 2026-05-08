@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    # Convert map to list so it can be reused
+    arr = list(map(int, input().split()))    
+    
+    first = max(arr)
+    others = [x for x in arr if x != first]
+    print(max(others))
