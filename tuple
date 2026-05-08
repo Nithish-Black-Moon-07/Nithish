@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    n = int(input())
+    # Read the line, split into strings, convert to integers, and create a tuple
+    t = tuple(map(int, input().split()))
+    
+    # Print the hash of the tuple
+    print(hash(t))
