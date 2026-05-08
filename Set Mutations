@@ -1,0 +1,11 @@
+_ = int(input())
+A = set(map(int, input().split()))
+
+N = int(input())
+
+for _ in range(N):
+    cmd = input().split()[0]
+    other_set = set(map(int, input().split()))    
+    getattr(A, cmd)(other_set)
+print(sum(A))
+
