@@ -1,0 +1,30 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = []
+    
+    for _ in range(n):
+        # Read the command and its arguments
+        command = input().split()
+        cmd_name = command[0]
+        
+        if cmd_name == "insert":
+            # insert i e: Insert integer e at index i
+            arr.insert(int(command[1]), int(command[2]))
+        elif cmd_name == "print":
+            # print: Print the list
+            print(arr)
+        elif cmd_name == "remove":
+            # remove e: Delete the first occurrence of integer e
+            arr.remove(int(command[1]))
+        elif cmd_name == "append":
+            # append e: Insert integer e at the end of the list
+            arr.append(int(command[1]))
+        elif cmd_name == "sort":
+            # sort: Sort the list
+            arr.sort()
+        elif cmd_name == "pop":
+            # pop: Pop the last element from the list
+            arr.pop()
+        elif cmd_name == "reverse":
+            # reverse: Reverse the list
+            arr.reverse()
